@@ -1,7 +1,7 @@
 Redis cookbook
 ------------------
 
-This cookbook provides a basic memcached install and config.
+This cookbook provides a basic Redis install and config.
 
 Requirements
 ------------
