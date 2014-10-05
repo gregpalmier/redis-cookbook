@@ -23,5 +23,5 @@ platforms:
 
 suites:
 - name: default
-  run_list: ["recipe[redis-cookbook]"]
+  run_list: ['recipe[redis-cookbook]']
   attributes: {}

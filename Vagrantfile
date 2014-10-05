@@ -74,13 +74,13 @@ Vagrant.configure("2") do |config|
   # config.berkshelf.except = []
   config.vm.provision :chef_solo do |chef|
     chef.json = {
-        :redis => {
+        redis: {
       }
     }
 
     chef.run_list = [
-        "recipe[apt]",
-        "recipe[redis-cookbook]"
+        'recipe[apt]',
+        'recipe[redis-cookbook]'
     ]
   end
 end
