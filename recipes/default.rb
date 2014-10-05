@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-%w{redis-server}.each do |pkg|
+%w(redis-server).each do |pkg|
   package pkg do
     action :upgrade
   end
