@@ -12,7 +12,14 @@ Requirements
 Usage
 -----
 
-In your Vagrantfile, customize these attributes:
+Include the recipe in your `run_list`:
+
+````
+'recipe[redis-cookbook]'
+````
+
+Attributes
+----------
 
 ````
 default['redis']['daemonize']         = "yes"
@@ -27,15 +34,10 @@ default['redis']['rdbcompression']    = "yes"
 default['redis']['dbfilename']        = "dump.rdb"
 ````
 
-Attributes
-----------
-
-No additional attributes yet.
-
 Recipes
 -------
 
-No additional recipes yet.
+default.rb - Install the Redis Server.
 
 Contributing
 ------------
@@ -49,5 +51,5 @@ Contributing
 
 License and Authors
 -------------------
-License: None.  Do as you wish.
+License: See LICENSE
 Authors: gregpalmier

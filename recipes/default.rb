@@ -22,9 +22,15 @@
   end
 end
 
+service 'redis-server' do
+  supports :status => 'true', :restart => 'true', :stop => 'true'
+  action [:enable, :start]
+end
+
 template '/etc/redis/redis.conf' do
   source 'redis.conf.erb'
   owner 'root'
   group 0
   mode 00644
+  notifies :restart, 'service[redis-server]', :immediately
 end
