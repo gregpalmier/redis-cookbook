@@ -1,4 +1,4 @@
-Redis cookbook
+redis-cookbook
 ------------------
 
 This cookbook provides a basic Redis install and config.
@@ -22,16 +22,17 @@ Attributes
 ----------
 
 ````
-default['redis']['daemonize']         = "yes"
-default['redis']['pid']               = "/var/run/redis.pid"
-default['redis']['port']              = "6379"
-default['redis']['bind']              = "0.0.0.0"
-default['redis']['timeout']           = "300"
-default['redis']['loglevel']          = "notice"
-default['redis']['logfile']           = "/var/log/redis/redis-server.log"
-default['redis']['databases']         = "16"
-default['redis']['rdbcompression']    = "yes"
-default['redis']['dbfilename']        = "dump.rdb"
+default['redis']['daemonize']         = 'yes'
+default['redis']['pid']               = '/var/run/redis.pid'
+default['redis']['port']              = '6379'
+default['redis']['bind']              = '0.0.0.0'
+default['redis']['timeout']           = '300'
+default['redis']['loglevel']          = 'notice'
+default['redis']['logfile']           = '/var/log/redis/redis-server.log'
+default['redis']['databases']         = '16'
+default['redis']['rdbcompression']    = 'yes'
+default['redis']['dbfilename']        = 'dump.rdb'
+default['redis']['dir']               = '/var/lib/redis'
 ````
 
 Recipes
